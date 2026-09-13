@@ -6,6 +6,10 @@ import { checkDueReminders } from '../utils/checkDueReminders'
 const CHECK_INTERVAL_MS = 15 * 60 * 1000
 
 export default defineNitroPlugin(() => {
+  // on Vercel, a Vercel Cron job hits GET /api/cron/send-reminders instead --
+  // serverless functions don't stay alive for setInterval to matter there
+  if (process.env.VERCEL) return
+
   async function run() {
     try {
       const sent = await checkDueReminders()
