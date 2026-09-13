@@ -1,8 +1,8 @@
 import { checkDueReminders } from '../utils/checkDueReminders'
 
 // local-only scheduler: while the dev/node server process stays alive, check
-// for due-date reminders periodically. Once deployed, this can be replaced by
-// (or run alongside) an external cron hitting POST /api/cron/send-reminders.
+// for due-date reminders periodically. On Vercel, a Vercel Cron job hits
+// GET /api/cron/send-reminders instead (see vercel.json).
 const CHECK_INTERVAL_MS = 15 * 60 * 1000
 
 export default defineNitroPlugin(() => {
