@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import type { CategoryColor } from '../../shared/utils/categoryColors'
-import type { CategoryIconName } from '../../shared/utils/categoryIcons'
-import { CATEGORY_BG_HEX, type CategoryBgColor } from '../../shared/utils/categoryBgColors'
-
 definePageMeta({ middleware: 'auth' })
 
 interface Todo {

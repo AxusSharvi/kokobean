@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { CATEGORY_ICONS, type CategoryIconName } from '../../shared/utils/categoryIcons'
-
 defineProps<{ modelValue: CategoryIconName }>()
 const emit = defineEmits<{ 'update:modelValue': [CategoryIconName] }>()
 </script>

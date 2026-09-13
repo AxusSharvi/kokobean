@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { CATEGORY_BG_COLORS, CATEGORY_BG_HEX, CATEGORY_BG_LABEL, type CategoryBgColor } from '../../shared/utils/categoryBgColors'
-
 defineProps<{ modelValue: CategoryBgColor }>()
 const emit = defineEmits<{ 'update:modelValue': [CategoryBgColor] }>()
 </script>

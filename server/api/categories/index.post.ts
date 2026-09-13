@@ -1,7 +1,4 @@
 import { categories } from '../../database/schema'
-import { isCategoryColor } from '../../../shared/utils/categoryColors'
-import { isCategoryIcon } from '../../../shared/utils/categoryIcons'
-import { isCategoryBgColor } from '../../../shared/utils/categoryBgColors'
 
 export default defineEventHandler(async (event) => {
   const { user } = await requireUserSession(event)

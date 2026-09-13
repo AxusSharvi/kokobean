@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import type { CategoryColor } from '../../../shared/utils/categoryColors'
-import type { CategoryIconName } from '../../../shared/utils/categoryIcons'
-
 definePageMeta({ middleware: 'admin' })
 
 interface AdminUser {

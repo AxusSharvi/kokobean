@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { CATEGORY_COLORS, type CategoryColor } from '../../shared/utils/categoryColors'
-
 defineProps<{ modelValue: CategoryColor }>()
 const emit = defineEmits<{ 'update:modelValue': [CategoryColor] }>()
 
